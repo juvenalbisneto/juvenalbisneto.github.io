@@ -1,0 +1,48 @@
+@-webkit-keyframes drop {
+  0% {
+    visibility: visible;
+    top: -101;
+  }
+  66% {
+    top: 100%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+img.bomb {
+  visibility: hidden;
+  z-index: 1;
+  position: absolute;
+  height: 100px;
+  width: 33px;
+  margin-left: 25%;
+  -webkit-animation: drop 4s 1.5s infinite linear;
+  -moz-animation: drop 4s 1.5s infinite linear;
+  animation: drop 4s 1.5s infinite linear;
+}
+
+img.bomb2 {
+  visibility: hidden;
+  z-index: 1;
+  position: absolute;
+  height: 100px;
+  width: 33px;
+  margin-left: 50%;
+  -webkit-animation: drop 2.5s 0s infinite linear;
+  -moz-animation: drop 2.5s 0s infinite linear;
+  animation: drop 2.5s 0s infinite linear;
+}
+
+img.bomb3 {
+  visibility: hidden;
+  z-index: 1;
+  position: absolute;
+  height: 100px;
+  width: 33px;
+  margin-left: 80%;
+  -webkit-animation: drop 3s 0.7s infinite linear;
+  -moz-animation: drop 3s 0.7s infinite linear;
+  animation: drop 3s 0.7s infinite linear;
+}

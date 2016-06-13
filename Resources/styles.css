@@ -1,0 +1,131 @@
+
+html{
+	height: 100%;
+	background-repeat: no-repeat;
+	background: #fa3f95; /* Old browsers */
+	background: -moz-linear-gradient(top, #fa3f95 0%, #eec393 75%, #0c4794 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fa3f95), color-stop(75%,#eec393), color-stop(100%,#0c4794)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #fa3f95 0%,#eec393 75%,#0c4794 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #fa3f95 0%,#eec393 75%,#0c4794 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #fa3f95 0%,#eec393 75%,#0c4794 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #fa3f95 0%,#eec393 75%,#0c4794 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa3f95', endColorstr='#0c4794',GradientType=0); /* IE6-9 */
+}
+
+/*SMALL*/
+@media screen and (max-width: 500px) and (max-height: 400px){
+	img.building{
+		visibility: hidden;
+	}
+	img.title{
+  		position:absolute;
+   		width: 200px;
+   		height: auto;
+   		left:50%;
+   		top: 10%;
+	}
+	img.appstorebutton{
+		visibility: hidden;
+	}
+}
+/*LANDSCAPE*/
+@media screen and (orientation:landscape) and (max-height: 500px){
+	img.building{
+		z-index: 1;
+		position:absolute;
+		width: auto;
+		height: 80%;
+		bottom: 0%;
+		right: 5%;
+	}
+	img.title{
+		z-index: 2;
+  		position:absolute;
+   		width: auto;
+   		height: 80%;
+   		left:5%;
+   		top: 10%;
+	}
+	img.appstorebutton{
+		z-index: 3;
+		width: auto;
+		height: 70px;
+   		position:absolute;
+   		top:50%;
+   		margin-top: -35px;
+   		right: 12.5%
+	}
+}
+@media screen and (orientation:landscape) and (min-height: 501px){
+	img.building{
+		z-index: 1;
+		position:absolute;
+		width: 500px;
+		height: auto;
+		bottom: 0%;
+		left: 50%;
+		margin-left: -250px;
+	}
+	img.title{
+		z-index: 2;
+  		position:absolute;
+   		width: 500px;
+   		height: auto;
+   		top:5%;
+   		left:50%;
+   		margin-left: -250px;
+	}
+	img.appstorebutton{
+		z-index: 3;
+		width: 200px;
+		height: auto;
+   		position:absolute;
+   		bottom:10%;
+   		left:50%;
+   		margin-left:-90px;
+	}
+}
+
+/*PORTRAIT*/
+@media screen and (orientation:portrait){
+	img.title{
+		z-index: 2;
+  		position:absolute;
+   		width: 80%;
+   		height: auto;
+   		top:5%;
+   		left:10%;
+	}
+	img.building{
+		z-index: 1;
+		position:absolute;
+		width: 90%;
+		height: auto;
+		bottom: 0%;
+		left: 5%;
+	}
+}
+
+@media screen and (orientation:portrait) and(-webkit-min-device-pixel-ratio: 1){
+  img.appstorebutton{
+		z-index: 3;
+		width: 200px;
+		height: auto;
+   		position:absolute;
+   		bottom:10%;
+   		left:50%;
+   		margin-left:-100px;
+	}
+}
+
+@media screen and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 2){
+  img.appstorebutton{
+		z-index: 3;
+		width: 400px;
+		height: auto;
+   		position:absolute;
+   		bottom:10%;
+   		left:50%;
+   		margin-left:-200px;
+	}
+}
