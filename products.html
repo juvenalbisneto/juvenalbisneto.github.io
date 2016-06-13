@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Juvenal Bisneto</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        body {
+            padding-top: 50px;
+        }
+        #carousel-fallingbombs {
+            background-image: url(./resources/img/products/fallingbombs/background.png);
+            background-repeat: round;
+            height: 700px;
+            width: 100%;
+        }
+        #carousel-fallingbombs-logo {
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+            margin-bottom: 30px;
+            z-index: 3;
+        }
+        #carousel-fallingbombs-building {
+            margin-left: auto;
+            margin-right: auto;
+            bottom: 0;
+            padding-left: 30px;
+            padding-right: 30px;
+            z-index: 1;
+        }
+        #carousel-fallingbombs-bomb {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            width: 25px;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html" class="navbar-brand">Juvenal Bisneto</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="">Products</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="carousel-products" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-products" data-slide-to="0" class="active"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active" id="carousel-fallingbombs">
+                <img id="carousel-fallingbombs-logo" src="./resources/img/products/fallingbombs/logo.png">
+                <img id="carousel-fallingbombs-bomb" src="./resources/img/products/fallingbombs/bomb.png">
+                <img id="carousel-fallingbombs-building" src="./resources/img/products/fallingbombs/building.png" align="middle">
+                <div class="carousel-caption">
+                    <a class="btn btn-primary btn-lg" href="https://itunes.apple.com/app/falling-bombs/id829649797?mt=8">Download</a>
+                    <p><small>iOS 7.1+</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-products" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-products" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+</body>
+
+</html>
